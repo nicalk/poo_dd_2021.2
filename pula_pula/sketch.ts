@@ -25,7 +25,6 @@ class Pula_Pula {
     chegar(criança: Criança): void {
         this.espera.push(criança);
     }
-
     //Mover a primeira criança da fila de espera do pula pula para dentro do pula pula
     entrar(indice: number): boolean {
         if (indice < 0) {
@@ -33,7 +32,6 @@ class Pula_Pula {
         }
         return true;
     }
-
     //Mover a primeira criança que entrou no pula pula para o final da fila de espera
     sair(indice: number): boolean {
         if (indice < 0 || indice >= this.vagas.length) {
@@ -41,7 +39,6 @@ class Pula_Pula {
         }
         return false;
     }
-
     //Os pais chamaram, então você busca a criança seja da fila de entrada ou de dentro do pula pula e retira do brinquedo
     paisChamam(nome: string): Criança {
         for (let i = 0; i < this.vagas.length; i++) {
@@ -51,7 +48,6 @@ class Pula_Pula {
             }
         }
     }
-
     //Idade limite para o pula pula
     idadeMax(idade: number): boolean {
         if(this.criança.idade > 12) {
