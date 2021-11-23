@@ -74,7 +74,7 @@ class Tamagotchi {
     }
 
     toString(): string {
-        return `Energia/Max: ${this.energiaMax} Saciedade/Max:${this.fomeMax} Limpeza/Max:${this.banhoMax} Diamantes:${this.diamantes} Idade: ${this.idade}`;
+        return `Energia/Max: ${this.energiaMax} Saciedade/Max: ${this.fomeMax} Limpeza/Max: ${this.banhoMax} Diamantes: ${this.diamantes} Idade: ${this.idade}`;
     }
     testAlive(): boolean {
         if(this.vivo) {
